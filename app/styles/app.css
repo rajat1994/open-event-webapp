@@ -1,0 +1,170 @@
+@import 'normalize.css';
+
+/* General
+ -------------------------------------------------- */
+
+* {
+          box-sizing: border-box;
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body > .ember-view {
+  min-height: 100%;
+}
+
+body {
+  color: #333;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.underline {
+  border-bottom: 1px solid #eee;
+}
+
+/* Layout
+ -------------------------------------------------- */
+
+.flex {
+  display: flex;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--row {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.stick-left {
+  align-self: flex-start;
+}
+
+.stick-right {
+  margin-left: auto;
+}
+
+.stretch {
+  min-height: 100vh;
+}
+
+/* Typography
+ -------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.ms1 {
+  font-size: 2.618em;
+}
+
+.ms2 {
+  font-size: 1.618em;
+}
+
+.ms3 {
+  font-size: 1em;
+}
+
+.ms4 {
+  font-size: .8em;
+  line-height: 2em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Lists
+ -------------------------------------------------- */
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  margin-right: 1.6em;
+}
+
+.list > .list-item:last-child {
+  margin-right: 0;
+}
+
+/* Colors
+ -------------------------------------------------- */
+
+.grey {
+  color: #666;
+}
+
+.grey--light {
+  color: #aaa;
+}
+
+/* Paddings & Margins
+ -------------------------------------------------- */
+
+.pad {
+  padding: .8em;
+}
+
+.pad-vertical {
+  padding: .8em 0;
+}
+
+.pad-vertical--half {
+  padding: .4em 0;
+}
+
+/* App Specifics
+ -------------------------------------------------- */
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.content {
+  flex: 1;
+}
+
+.nav__item {
+  margin-right: 3.2em;
+}
+
+.nav__link {
+  display: block;
+  width: 60px;
+}
+
+.app-footer {
+  border-top: 1px solid #eee;
+  color: #aaa;
+  font-size: .7em;
+}
