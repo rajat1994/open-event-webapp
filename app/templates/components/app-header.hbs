@@ -3,7 +3,9 @@
 <nav class="stick-right">
   <ul class="ms4 list flex nav">
     <li class="list-item nav__item"><a class="grey nav__link" href="#">Schedule</a></li>
-    <li class="list-item nav__item"><a class="grey nav__link" href="#">Speakers</a></li>
+    <li class="list-item nav__item">
+      {{#link-to "speakers" class="grey nav__link"}}Speakers{{/link-to}}
+    </li>
     <li class="list-item nav__item"><a class="grey nav__link" href="#">Sponsors</a></li>
     <li class="list-item nav__item"><a class="grey nav__link" href="#">Map</a></li>
   </ul>
