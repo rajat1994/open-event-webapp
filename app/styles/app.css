@@ -37,6 +37,10 @@ a:visited {
   border-bottom: 1px solid #eee;
 }
 
+.vert-divider {
+  border-right: 1px solid #eee;
+}
+
 /* Layout
  -------------------------------------------------- */
 
@@ -53,12 +57,21 @@ a:visited {
   flex-wrap: wrap;
 }
 
+.flex--centered {
+  align-items: center;
+  justify-content: center;
+}
+
 .fit {
   flex: 1;
 }
 
 .half {
   flex: 0 0 50%;
+}
+
+.one-third {
+  flex: 0 0 33.33%;
 }
 
 .stick-left {
@@ -106,6 +119,10 @@ p {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 /* Lists
@@ -163,6 +180,10 @@ p {
   margin-bottom: 3.2em;
 }
 
+.m-left {
+  margin-left: .8em;
+}
+
 .m-right {
   margin-right: .8em;
 }
@@ -208,6 +229,26 @@ p {
   background-color: #eee;
   height: 200px;
   width: 200px;
+}
+
+.event__time__value {
+  display: block;
+}
+
+.event__name {
+  font-weight: 300;
+}
+
+.event__time {
+  flex: 0 0 12.5%;
+}
+
+.event__desc {
+  flex: 0 0 75%;
+}
+
+.event__location {
+  flex: 0 0 12.5%;
 }
 
 .app-footer {

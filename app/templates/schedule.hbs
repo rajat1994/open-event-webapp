@@ -1,0 +1,11 @@
+<div class="flex m-top">
+  <div class="flex flex--column flex--centered one-third stretch vert-divider">
+    <h1 class="ms1">Schedule</h1>
+  </div>
+
+  <div class="stretch fit">
+    {{#each model as |event|}}
+      {{event-summary data=event}}
+    {{/each}}
+  </div>
+</div>

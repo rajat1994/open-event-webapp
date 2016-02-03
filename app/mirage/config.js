@@ -1,35 +1,71 @@
+const speakers = [
+  {
+    id: 1,
+    name: 'Mohit Kanwal',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor.',
+    company: 'XXX Company',
+    avatar: ''
+  },
+  {
+    id: 2,
+    name: 'John Cena',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor.',
+    company: 'XXX Company',
+    avatar: ''
+  },
+  {
+    id: 3,
+    name: 'John Doe',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor.',
+    company: 'XXX Company',
+    avatar: ''
+  },
+  {
+    id: 4,
+    name: 'Peter Pan',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor.',
+    company: 'XXX Company',
+    avatar: ''
+  }
+];
+
+const events = [
+  {
+    id: 1,
+    name: 'How to write code',
+    start_time: '9:00 AM',
+    end_time: '10:00 AM',
+    date: new Date(),
+    category: 'Random',
+    venue: 'Somewhere'
+  },
+  {
+    id: 2,
+    name: 'Snack',
+    start_time: '10:00 AM',
+    end_time: '10:30 AM',
+    date: new Date(),
+    category: 'Random',
+    venue: 'Somewhere'
+  },
+  {
+    id: 3,
+    name: 'Drinks',
+    start_time: '11:00 AM',
+    end_time: '12:00 AM',
+    date: new Date(),
+    category: 'Random',
+    venue: 'Somewhere'
+  }
+];
+
 export default function() {
   this.get('/speakers', () => {
-    return [
-      {
-        id: 1,
-        name: 'Mohit Kanwal',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor.',
-        company: 'XXX Company',
-        avatar: ''
-      },
-      {
-        id: 2,
-        name: 'John Cena',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor.',
-        company: 'XXX Company',
-        avatar: ''
-      },
-      {
-        id: 3,
-        name: 'John Doe',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor.',
-        company: 'XXX Company',
-        avatar: ''
-      },
-      {
-        id: 4,
-        name: 'Peter Pan',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed risus sed tellus pharetra bibendum vitae ut nisi. Ut at dui dolor.',
-        company: 'XXX Company',
-        avatar: ''
-      }
-    ];
+    return speakers;
+  });
+
+  this.get('/events', () => {
+    return events;
   });
   // These comments are here to help you get started. Feel free to delete them.
 
