@@ -251,6 +251,11 @@ p {
   flex: 0 0 12.5%;
 }
 
+.faux-logo {
+  background-color: #eee;
+  height: 200px;
+}
+
 .app-footer {
   border-top: 1px solid #eee;
   color: #aaa;

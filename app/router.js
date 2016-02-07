@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('speakers');
   this.route('schedule');
+  this.route('sponsors');
 });
 
 export default Router;

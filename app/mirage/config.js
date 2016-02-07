@@ -59,6 +59,33 @@ const events = [
   }
 ];
 
+const sponsors = [
+  {
+    id: 1,
+    name: 'Google',
+    url: 'https://google.com',
+    logo: ''
+  },
+  {
+    id: 2,
+    name: 'Redhat',
+    url: 'https://redhat.com',
+    logo: ''
+  },
+  {
+    id: 3,
+    name: 'MySQL',
+    url: 'http://mysql.com',
+    logo: ''
+  },
+  {
+    id: 4,
+    name: 'WWE',
+    url: 'http://wwe.com',
+    logo: ''
+  }
+];
+
 export default function() {
   this.get('/speakers', () => {
     return speakers;
@@ -66,6 +93,10 @@ export default function() {
 
   this.get('/events', () => {
     return events;
+  });
+
+  this.get('/sponsors', () => {
+    return sponsors;
   });
   // These comments are here to help you get started. Feel free to delete them.
 
