@@ -168,6 +168,10 @@ p {
   margin-top: .8em;
 }
 
+.m-right {
+  margin-right: .8em;
+}
+
 .m-top--large {
   margin-top: 1.6em;
 }
@@ -251,8 +255,14 @@ p {
   flex: 0 0 12.5%;
 }
 
-.faux-logo {
-  background-color: #eee;
+.sponsor {
+  display: block;
+}
+
+.sponsor__logo {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
   height: 200px;
 }
 
