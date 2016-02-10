@@ -220,6 +220,11 @@ p {
   flex: 1;
 }
 
+.site-logo {
+  max-height: 45px;
+  max-width: 110px;
+}
+
 .nav__item {
   margin-right: 3.2em;
 }
