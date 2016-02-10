@@ -14,6 +14,8 @@ module.exports = function(environment) {
     },
 
     APP: {
+      API_HOST: 'https://raw.githubusercontent.com',
+      API_NAMESPACE: 'fossasia/open-event/master/testapi/event/1'
       // Here you can pass flags/options to your application instance
       // when it is created
     }
