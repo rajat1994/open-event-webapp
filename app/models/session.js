@@ -1,10 +1,12 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  name: DS.attr('string'),
-  startTime: DS.attr('string'),
-  endTime: DS.attr('string'),
-  date: DS.attr('date'),
-  category: DS.attr('string'),
-  venue: DS.attr('string')
+  title: DS.attr(),
+  abstract: DS.attr(),
+  description: DS.attr(),
+  startTime: DS.attr(),
+  endTime: DS.attr(),
+  date: DS.attr(),
+  category: DS.attr(),
+  venue: DS.attr()
 });
