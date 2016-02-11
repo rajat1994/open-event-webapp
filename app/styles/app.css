@@ -264,7 +264,8 @@ p {
   display: block;
 }
 
-.sponsor__logo {
+.sponsor__logo,
+.speaker__photo {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
