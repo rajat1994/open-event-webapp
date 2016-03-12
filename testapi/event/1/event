@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "color": "#fdfdfd",
+      "email": "dev@fossasia.org",
+      "end_time": "2016-03-20T10:00:00",
+      "id": 1,
+      "latitude": 1.333194,
+      "location_name": "15 Science Centre Road, Singapore",
+      "logo": "https://raw.githubusercontent.com/fossasia/2016.fossasia.org/gh-pages/img/fossasia-dark.png",
+      "longitude": -103.736132,
+      "name": "FOSSASIA",
+      "slogan": "Fossasia",
+      "start_time": "2016-03-18T16:00:00",
+      "url": "http://2016.fossasia.org/",
+      "address": {
+        "street": "15",
+        "locality": "Science Centre Road",
+        "city": "Singapore",
+        "country": "Singapore",
+        "postalCode": " "
+      }
+    }
+  ]
+}
