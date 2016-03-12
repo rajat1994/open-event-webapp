@@ -3,6 +3,6 @@ var config = {
     "apiBaseGetUrl": "https://raw.githubusercontent.com/mananwason/open-event-scraper/master/",
     "eventId": "1",
     "use_testApi": true,
-    "themeColorPrimary": "yellow",
-    "themeColorAccent": "teal"
+    "themeColorPrimary": "red",
+    "themeColorAccent": "yellow"
 };
