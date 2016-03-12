@@ -41,8 +41,8 @@ sessionsModule.controller('SessionsController',
 
                         for (var j = 0; j < response.data.sessions.length; j+= 1) {
                             var dayDiff = DateUtils.DateDiff.inDays(
-                                $sessionStorage.event.begin,
-                                response.data.sessions[j].begin);
+                                $sessionStorage.event.start_time,
+                                response.data.sessions[j].start_time);
                             //Filter out any mistakenly entered sessions outside date range
                             if (dayDiff>openevent.totalDays || dayDiff < 0) {
                                 console.log('Session date = ' + dayDiff
@@ -53,7 +53,7 @@ sessionsModule.controller('SessionsController',
                             sc.Sessions[dayDiff].push(response.data.sessions[j]);
                             $sessionStorage.days[dayDiff].sessions = sc.Sessions[dayDiff];
                             $sessionStorage.days[dayDiff].sessions.sort(SortUtils.sortBy(
-                            	'begin',
+                            	'start_time',
                             	false,
                             	function(a){return a;}
                             	));
@@ -67,8 +67,8 @@ sessionsModule.controller('SessionsController',
             }
 
             sc.duration = function(session) {
-                var start = DateUtils.getHourMin(session.begin);
-                var end = DateUtils.getHourMin(session.end);
+                var start = DateUtils.getHourMin(session.start_time);
+                var end = DateUtils.getHourMin(session.end_time);
 
                 return {start: start, end: end};
             };
@@ -99,8 +99,8 @@ sessionsModule.controller('SessionDialogController', ['$mdDialog',
             $mdDialog.hide();
         };
         sdc.duration = function(session) {
-            var start = DateUtils.getHourMin(session.begin);
-            var end = DateUtils.getHourMin(session.end);
+            var start = DateUtils.getHourMin(session.start_time);
+            var end = DateUtils.getHourMin(session.end_time);
 
             return start + ' - ' + end;
         };

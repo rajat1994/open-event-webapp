@@ -53,11 +53,10 @@ openevent.controller('AppController',
     if (app.Event.length === 0) {
         ApiJsonFactory.getJson('event')
             .then(function (response) {
-                console.log(response);
-                console.log(response.data)
                 app.Event = response.data.events[0];
                 app.$storage.event = app.Event;
-                openevent.totalDays = DateUtils.DateDiff.inDays(app.Event.begin, app.Event.end) + 1;
+                openevent.totalDays = DateUtils.DateDiff.inDays(app.Event.start_time, app.Event.end_time) + 1;
+                console.log("Days = " + openevent.totalDays)
                 app.Days = [openevent.totalDays];
                 for (var i = 0; i < openevent.totalDays; i+=1) {
                     app.Days[i] = {num: i, label: 'Day '+ (i+1)};
