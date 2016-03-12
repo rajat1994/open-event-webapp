@@ -1,22 +1,19 @@
+
 {
   "events": [
     {
-      "end_time": "2015-05-08T16:00:300", 
-      "id": 3, 
-      "latitude": 23.3455, 
-      "location_name": "Berlin Station", 
-      "longitude": 78.1233, 
-      "name": "Re:Publica", 
-      "start_time": "2015-05-01T14:00:00"
-    }, 
-    {
-      "end_time": "2015-06-12T05:00:00", 
-      "id": 4, 
-      "latitude": 56.8876, 
-      "location_name": "Singapore", 
-      "longitude": 123.4567, 
-      "name": "FOSSASIA", 
-      "start_time": "2015-06-10T05:00:00"
+      "color": "#fdfdfd",
+      "email": "dev@fossasia.org",
+      "end_time": "2016-03-18T10:00:00",
+      "id": 4,
+      "latitude": 1.333194,
+      "location_name": "15 Science Centre Road, Singapore",
+      "logo": "https://raw.githubusercontent.com/fossasia/2016.fossasia.org/gh-pages/img/fossasia-dark.png",
+      "longitude": -103.736132,
+      "name": "FOSSASIA",
+      "slogan": "Fossasia",
+      "start_time": "2016-03-20T16:00:00",
+      "url": "http://2016.fossasia.org/"
     }
   ]
-}s
+}
